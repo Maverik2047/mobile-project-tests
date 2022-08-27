@@ -37,6 +37,7 @@ public class TestBase {
         Attach.video(sessionId);
 
         Selenide.closeWebDriver();
+        Selenide.clearBrowserCookies();
 
 
     }
