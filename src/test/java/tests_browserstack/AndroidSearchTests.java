@@ -47,6 +47,42 @@ public class AndroidSearchTests extends TestBase {
         });
 
     }
+
+    @Test
+    @DisplayName("Hide this card feature")
+    void hideThisCard() {
+        step("Click on article settings", () -> {
+            $(AppiumBy.id("org.wikipedia.alpha:id/view_list_card_header_menu")).click();
+        });
+        step("Check possibility to hide the selected article", () -> {
+            $(AppiumBy.id("org.wikipedia.alpha:id/title")).shouldHave(exactText("Hide this card"));
+            $(AppiumBy.id("org.wikipedia.alpha:id/title")).click();
+        });
+
+    }
+
+    @Test
+    @DisplayName("Language settings")
+    void settingsTest() {
+        step("Open wiki settings tub", () -> {
+            $(AppiumBy.id("org.wikipedia.alpha:id/menu_overflow_button")).click();
+            $(AppiumBy.id("org.wikipedia.alpha:id/explore_overflow_settings")).click();
+        });
+        step("Click on Wikipedia language settings", () -> {
+            $(AppiumBy.id("android:id/title")).click();
+        });
+        step("Search for French language", () -> {
+            $(AppiumBy.id("org.wikipedia.alpha:id/preference_languages_filter")).sendKeys("French");
+        });
+        step("Setup French language", () -> {
+            $(AppiumBy.id("org.wikipedia.alpha:id/language_subtitle")).click();
+        });
+        step("Check that we got selected language in settings", () -> {
+            $(AppiumBy.id("android:id/summary")).shouldHave(exactText("Français"));
+        });
+
+
+    }
 }
 
 
