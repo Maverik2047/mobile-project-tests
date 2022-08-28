@@ -1,4 +1,4 @@
-package tests_browserstack;
+package tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -37,7 +37,6 @@ public class TestBase {
         Attach.video(sessionId);
 
         Selenide.closeWebDriver();
-        Selenide.clearBrowserCookies();
 
 
     }

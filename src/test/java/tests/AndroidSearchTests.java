@@ -1,4 +1,4 @@
-package tests_browserstack;
+package tests;
 
 import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.DisplayName;
