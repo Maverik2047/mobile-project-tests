@@ -15,6 +15,9 @@
 > 
 > ➠[Видео примеры](#video_camera-Видео)
 
+<p align="left">
+<img title="Allure Tests" src="images/screens/octocat.png">
+</p>
 
 ## Реализованные проверки
 
