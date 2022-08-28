@@ -52,11 +52,16 @@ gradle clean mobile_tests
 
 ## Allure-отчет
 <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/Mobile_tests/allure/">Allure report</a>
+
+###  Основной отчет
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/Mobile_tests/allure/#"><img src="images/screens/allure.png" alt="Jenkins"/></a>
+<img title="Allure Overview Dashboard" src="images/screens/allure.PNG">
 </p>
+
+
+### Тесты
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/Mobile_tests/allure/#"><img src="images/screens/allure2.png" alt="Jenkins"/></a>
+<img title="Allure Tests" src="images/screens/allure2.PNG">
 </p>
 
 ##  Примеры Видео
